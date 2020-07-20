@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_nearby_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FF5733"
+            android:onClick="btnClick"
+            android:text="@string/nearby_places"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#FF5733"
+            android:onClick="btnClick"
+            android:text="@string/restaurant"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btn_museum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#FF5733"
+            android:onClick="btnClick"
+            android:text="@string/museum"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_cafe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#FF5733"
+            android:onClick="btnClick"
+            android:text="@string/cafe"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF5733"
+            android:onClick="btnClick"
+            android:text="@string/clear"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_direction"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF5733"
+            android:onClick="btnClick"
+            android:text="@string/get_direction"
+            android:textColor="#fff" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF5733"
+            android:entries="@array/typesofmaps"
+            android:padding="5dp"
+            android:text="@string/map_type"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+</RelativeLayout>

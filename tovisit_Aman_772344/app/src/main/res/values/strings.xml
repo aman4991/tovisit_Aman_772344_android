@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Final Assignment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="no_favourite_place_found">No favourite place found</string>
+    <string name="find">Find</string>
+    <string name="map_type">Map Type</string>
+    <string name="get_direction">Get Direction</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="museum">Museum</string>
+    <string name="cafe">Cafe</string>
+    <string name="nearby_places">Nearby Places</string>
+    <string name="clear">clear</string>
+</resources>
